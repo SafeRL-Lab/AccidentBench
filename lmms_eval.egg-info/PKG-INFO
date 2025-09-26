@@ -1,0 +1,285 @@
+Metadata-Version: 2.4
+Name: lmms_eval
+Version: 0.3.0
+Summary: A framework for evaluating large multi-modality language models
+Author-email: LMMMs-Lab Evaluation Team <lmms-lab@outlook.com>
+License: MIT
+Project-URL: Homepage, https://lmms-lab.github.io
+Project-URL: Repository, https://github.com/EvolvingLMMs-Lab/lmms-eval
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate>=0.29.1
+Requires-Dist: black==24.1.0
+Requires-Dist: isort==5.13.2
+Requires-Dist: datasets==2.16.1
+Requires-Dist: evaluate>=0.4.0
+Requires-Dist: httpx==0.23.3
+Requires-Dist: jsonlines
+Requires-Dist: numexpr
+Requires-Dist: numpy==1.26.4
+Requires-Dist: peft>=0.2.0
+Requires-Dist: pybind11>=2.6.2
+Requires-Dist: pytablewriter
+Requires-Dist: sacrebleu>=1.5.0
+Requires-Dist: scikit-learn>=0.24.1
+Requires-Dist: sqlitedict==2.1.0
+Requires-Dist: torch>=2.1.0
+Requires-Dist: torchvision>=0.16.0
+Requires-Dist: timm
+Requires-Dist: einops
+Requires-Dist: ftfy
+Requires-Dist: openai
+Requires-Dist: opencv-python-headless
+Requires-Dist: av
+Requires-Dist: hf_transfer
+Requires-Dist: nltk
+Requires-Dist: sentencepiece==0.1.99
+Requires-Dist: yt-dlp
+Requires-Dist: pycocoevalcap
+Requires-Dist: tqdm-multiprocess
+Requires-Dist: transformers>=4.39.2
+Requires-Dist: transformers-stream-generator
+Requires-Dist: zstandard
+Requires-Dist: pillow
+Requires-Dist: pyyaml
+Requires-Dist: sympy
+Requires-Dist: latex2sympy2
+Requires-Dist: mpmath
+Requires-Dist: Jinja2
+Requires-Dist: openpyxl
+Requires-Dist: loguru
+Requires-Dist: hf_transfer
+Requires-Dist: tenacity==8.3.0
+Requires-Dist: wandb>=0.16.0
+Requires-Dist: tiktoken
+Requires-Dist: pre-commit
+Requires-Dist: pydantic
+Requires-Dist: packaging
+Requires-Dist: decord; platform_system != "Darwin"
+Requires-Dist: eva-decord; platform_system == "Darwin"
+Requires-Dist: zss
+Requires-Dist: protobuf==3.20
+Requires-Dist: sentence_transformers
+Requires-Dist: python-dotenv
+Provides-Extra: audio
+Requires-Dist: more-itertools; extra == "audio"
+Requires-Dist: editdistance; extra == "audio"
+Requires-Dist: zhconv; extra == "audio"
+Requires-Dist: librosa; extra == "audio"
+Requires-Dist: soundfile; extra == "audio"
+Provides-Extra: metrics
+Requires-Dist: pywsd; extra == "metrics"
+Requires-Dist: spacy; extra == "metrics"
+Requires-Dist: anls; extra == "metrics"
+Requires-Dist: rouge; extra == "metrics"
+Requires-Dist: capture_metric; extra == "metrics"
+Requires-Dist: Levenshtein; extra == "metrics"
+Provides-Extra: gemini
+Requires-Dist: google-generativeai; extra == "gemini"
+Provides-Extra: reka
+Requires-Dist: httpx==0.23.3; extra == "reka"
+Requires-Dist: reka-api; extra == "reka"
+Provides-Extra: qwen
+Requires-Dist: decord; extra == "qwen"
+Requires-Dist: qwen_vl_utils; extra == "qwen"
+Provides-Extra: mmsearch
+Requires-Dist: playwright; extra == "mmsearch"
+Requires-Dist: requests; extra == "mmsearch"
+Requires-Dist: matplotlib; extra == "mmsearch"
+Requires-Dist: duckduckgo_search; extra == "mmsearch"
+Requires-Dist: langchain; extra == "mmsearch"
+Requires-Dist: langchain-community; extra == "mmsearch"
+Requires-Dist: beautifulsoup4; extra == "mmsearch"
+Requires-Dist: FlagEmbedding; extra == "mmsearch"
+Requires-Dist: rouge; extra == "mmsearch"
+Provides-Extra: all
+Requires-Dist: gemini; extra == "all"
+Requires-Dist: reka; extra == "all"
+Requires-Dist: metrics; extra == "all"
+Requires-Dist: qwen; extra == "all"
+Requires-Dist: mmsearch; extra == "all"
+Dynamic: license-file
+
+
+<div align="center">
+  <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning">
+    <img src="https://github.com/SafeRL-Lab/Open-Space-Reasoning/blob/master/docs/figures/logo-m4r.png" alt="Logo" width="60%"> 
+  </a>
+  
+<h1 align="center" style="font-size: 30px;"><strong><em>M4R</em></strong>:  Measuring Massive Multi-Modal Understanding and Reasoning in Open Space</h1>
+<p align="center">
+    <a href="https://arxiv.org">Paper</a>
+    ·
+    <a href="https://github.com/Open-Space-Reasoning">Website</a>
+    ·
+    <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning/">Code</a>
+    ·
+    <a href="https://huggingface.co/Open-Space-Reasoning">Dataset</a>
+    ·
+    <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning/issues">Issue</a>
+  </p>
+</div>
+
+
+ ---
+
+<!--<p align="center" width="80%">
+<img src="https://github.com/SafeRL-Lab/Open-Space-Reasoning/blob/master/docs/figures/logo-m4r.png"  width="70%" height="70%">
+</p>
+# M4R: Measuring Massive Multi-Modal Understanding and Reasoning in Open Space
+-->
+
+
+
+## Installation
+
+For development, you can install the package by cloning the repository and running the following command:
+```bash
+pip install uv
+
+git clone git@github.com:SafeRL-Lab/Open-Space-Reasoning.git
+cd Open-Space-Reasoning
+uv venv dev
+source dev/bin/activate
+uv pip install -e .
+uv pip install -U "qwen-vl-utils"   
+```
+
+```bash
+uv venv -p python3.11.5 dev311
+source dev311/bin/activate
+uv pip install -e .
+```
+
+
+
+
+### Basic Usage
+
+Here's a basic evaluation example:
+
+```bash
+accelerate launch --num_processes=1 --main_process_port=12346 -m lmms_eval \
+        --model qwen2_5_vl \
+        --model_args=pretrained=Qwen/Qwen2.5-VL-7B-Instruct,max_pixels=12845056,use_flash_attention_2=False,interleave_visuals=True \
+        --tasks land_space_hard \
+        --batch_size 1 \
+        --log_samples \
+        --output_path /pasteur2/u/xhanwang/lmms-eval/outputs/land_space_hard/
+```
+
+Modify the following examples to test more models as the above script.
+> More examples can be found in [examples/models](examples/models)
+
+**Evaluation of OpenAI-Compatible Model**
+
+```bash
+bash examples/models/openai_compatible.sh
+bash examples/models/xai_grok.sh
+```
+
+**Evaluation of vLLM**
+
+```bash
+bash examples/models/vllm_qwen2vl.sh
+```
+
+**Evaluation of LLaVA-OneVision**
+
+```bash
+bash examples/models/llava_onevision.sh
+```
+
+**Evaluation of LLaMA-3.2-Vision**
+
+```bash
+bash examples/models/llama_vision.sh
+```
+
+**Evaluation of Qwen2-VL**
+
+```bash
+bash examples/models/qwen2_vl.sh
+bash examples/models/qwen2_5_vl.sh
+```
+
+**Evaluation of LLaVA on MME**
+
+If you want to test LLaVA 1.5, you will have to clone their repo from [LLaVA](https://github.com/haotian-liu/LLaVA) and
+
+```bash
+bash examples/models/llava_next.sh
+```
+
+**Evaluation with tensor parallel for bigger model (llava-next-72b)**
+
+```bash
+bash examples/models/tensor_parallel.sh
+```
+
+**Evaluation with SGLang for bigger model (llava-next-72b)**
+
+```bash
+bash examples/models/sglang.sh
+```
+
+**Evaluation with vLLM for bigger model (llava-next-72b)**
+
+```bash
+bash examples/models/vllm_qwen2vl.sh
+```
+
+**More Parameters**
+
+```bash
+python3 -m lmms_eval --help
+```
+
+**Environmental Variables**
+Before running experiments and evaluations, we recommend you to export following environment variables to your environment. Some are necessary for certain tasks to run.
+
+```bash
+export OPENAI_API_KEY="<YOUR_API_KEY>"
+export HF_HOME="<Path to HF cache>" 
+export HF_TOKEN="<YOUR_API_KEY>"
+export HF_HUB_ENABLE_HF_TRANSFER="1"
+export REKA_API_KEY="<YOUR_API_KEY>"
+# Other possible environment variables include 
+# ANTHROPIC_API_KEY,DASHSCOPE_API_KEY etc.
+```
+
+**Common Environment Issues**
+
+Sometimes you might encounter some common issues for example error related to httpx or protobuf. To solve these issues, you can first try
+
+```bash
+python3 -m pip install httpx==0.23.3;
+python3 -m pip install protobuf==3.20;
+# If you are using numpy==2.x, sometimes may causing errors
+python3 -m pip install numpy==1.26;
+# Someties sentencepiece are required for tokenizer to work
+python3 -m pip install sentencepiece;
+```
+
+## Citation
+If you find the repository useful, please cite the study
+``` Bash
+@article{gu2025m4r,
+  title={M4R: Measuring Massive Multi-Modal Understanding and Reasoning in Open Space},
+  author={Gu, Shangding and Wang, Xiaohan and Ying, Donghao and Zhao, Haoyu and Yang, Runing and Li, Boyi and Jin, Ming and Pavone, Marco and Yeung-Levy, Serena and Wang, Jun and Song, Dawn and Spanos, Costas},
+  journal={Github},
+  year={2025}
+}
+```
+
+
+
+
+
+## Acknowledgments
+
+We thank the contributors from [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval).
