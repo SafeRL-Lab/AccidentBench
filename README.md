@@ -340,9 +340,9 @@ python3 -m pip install sentencepiece;
 ## Citation
 If you find the repository useful, please cite the study
 ``` Bash
-@article{gu2025m4r,
-  title={Measuring Massive Multimodal Understanding and Reasoning in Open Space},
-  author={Gu, Shangding and Wang, Xiaohan and Ying, Donghao and Zhao, Haoyu and Yang, Runing and Li, Boyi and Jin, Ming and Pavone, Marco and Yeung-Levy, Serena and Wang, Jun and Song, Dawn and Spanos, Costas},
+@article{gu2025accident-bench,
+  title={AccidentBench: Benchmarking Multimodal Understanding and Reasoning in Vehicle Accidents and Beyond},
+  author={Gu, Shangding and Wang, Xiaohan and Ying, Donghao and Zhao, Haoyu and Yang, Runing and Jin, Ming and Li, Boyi and Pavone, Marco and Yeung-Levy, Serena and Wang, Jun and Song, Dawn and Spanos, Costas},
   journal={Github},
   year={2025}
 }
