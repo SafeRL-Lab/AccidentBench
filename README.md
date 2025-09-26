@@ -1,7 +1,7 @@
 
 <div align="center">
   <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning">
-    <img src="./docs/figures/logo-m4r.png" alt="Logo" width="60%"> 
+    <img src="./docs/figures/logo-full.png" alt="Logo" width="60%"> 
   </a>
   
 <h1 align="center" style="font-size: 30px;"><strong><em>AccidentBench</em></strong>: Benchmarking Multimodal Understanding and Reasoning in Vehicle Accidents and Beyond</h1>
