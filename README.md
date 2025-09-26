@@ -4,7 +4,7 @@
     <img src="./docs/figures/logo-m4r.png" alt="Logo" width="60%"> 
   </a>
   
-<h1 align="center" style="font-size: 30px;"><strong><em>M4R</em></strong>:  Measuring Massive Multimodal Understanding and Reasoning in Open Space</h1>
+<h1 align="center" style="font-size: 30px;"><strong><em>AccidentBench</em></strong>: Benchmarking Multimodal Understanding and Reasoning in Vehicle Accidents and Beyond</h1>
 <p align="center">
     <!-- <a href="./docs/M4R_paper.pdf">Paper</a> -->
     <!-- · -->
