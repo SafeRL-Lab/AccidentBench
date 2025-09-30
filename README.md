@@ -8,17 +8,17 @@
 <p align="center">
     <!-- <a href="./docs/M4R_paper.pdf">Paper</a> -->
     <!-- · -->
-    <a href="https://open-space-reasoning.github.io/">Website</a>
+    <a href="https://accident-bench.github.io/">Website</a>
     ·
     <a href="https://github.com/SafeRL-Lab/AccidentBench/">Code</a>
     ·
-    <a href="https://open-space-reasoning.github.io/#leaderboard-land-air">Leaderboard</a>
+    <a href="https://accident-bench.github.io//#leaderboard-land-air">Leaderboard</a>
     ·
     <a href="https://huggingface.co/datasets/Open-Space-Reasoning/Benchmark">Dataset</a>
     ·
     <a href="https://huggingface.co/datasets/Open-Space-Reasoning/M4R-zip">Dataset-Zip</a>
     ·
-    <a href="https://github.com/SafeRL-Lab/Open-Space-Reasoning/issues">Issue</a>
+    <a href="https://github.com/SafeRL-Lab/AccidentBench/issues">Issue</a>
   </p>
 </div>
 
