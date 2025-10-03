@@ -340,10 +340,10 @@ python3 -m pip install sentencepiece;
 ## Citation
 If you find the repository useful, please cite the study
 ``` Bash
-@article{gu2025accident-bench,
+@article{gu2025accidentbench,
   title={AccidentBench: Benchmarking Multimodal Understanding and Reasoning in Vehicle Accidents and Beyond},
-  author={Gu, Shangding and Wang, Xiaohan and Ying, Donghao and Zhao, Haoyu and Yang, Runing and Jin, Ming and Li, Boyi and Pavone, Marco and Yeung-Levy, Serena and Wang, Jun and Song, Dawn and Spanos, Costas},
-  journal={Github},
+  author={Gu, Shangding and Wang, Xiaohan and Ying, Donghao and Zhao, Haoyu and Yang, Runing and Jin, Ming and Li, Boyi and Pavone, Marco and Yeung-Levy, Serena and Wang, Jun and others},
+  journal={arXiv preprint arXiv:2509.26636},
   year={2025}
 }
 ```
