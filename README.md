@@ -48,7 +48,7 @@
 
 ## Leaderboard
 
-### Evaluation of Open Space (Land, Water, Air) domains using M4R benchmarks
+### Evaluation of Open Space (Land, Water, Air) domains using accident benchmarks
 
 Each reported number corresponds to the average score (overall, temporal, spatial, and intent reasoning).
 
