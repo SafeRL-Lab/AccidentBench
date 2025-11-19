@@ -227,7 +227,7 @@ If you encounter any issues during the download, we also provide a zipped versio
 Here's a basic evaluation example:
 
 
-> Download the dataset from [Hugging Face](https://huggingface.co/datasets/Open-Space-Reasoning/Benchmark), and set the dataset path to the corresponding task file. For example, specify the dataset path as `/your-dataset-path/land_space/short/hard/spatial_reasoning.json` in the task configuration file located at `/Open-Space-Reasoning/lmms_eval/tasks/land_space_short/land_space_hard.yaml`.
+> Download the dataset from [Hugging Face](https://huggingface.co/datasets/Open-Space-Reasoning/Benchmark), and set the dataset path to the corresponding task file. For example, specify the dataset path as `/your-dataset-path/land_space/short/hard/spatial_reasoning.json` in the task configuration file located at `lmms_eval/tasks/land_space_short/land_space_hard.yaml`, or see this https://github.com/SafeRL-Lab/AccidentBench/blob/main/lmms_eval/tasks/land_space_short_sample/land_space_easy.yaml
 
 
 ```bash
@@ -239,6 +239,7 @@ accelerate launch --num_processes=1 --main_process_port=12346 -m lmms_eval \
         --log_samples \
         --output_path /pasteur2/u/xhanwang/lmms-eval/outputs/land_space_hard/
 ```
+Also can use this to run experiments: https://github.com/SafeRL-Lab/AccidentBench/blob/main/script/run_internvl25_multi.sh
 
 Modify the following examples to test more models as the above script.
 > More examples can be found in [examples/models](examples/models)
