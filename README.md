@@ -194,8 +194,8 @@ understanding of goal-directed behaviors and decision-making in dynamic environm
 For development, you can install the package by cloning the repository and running the following command:
 ```bash
 pip install uv
-git clone git@github.com:SafeRL-Lab/m4r.git
-cd m4r
+git clone git@github.com:SafeRL-Lab/AccidentBench.git
+cd AccidentBench
 uv venv dev
 source dev/bin/activate
 uv pip install -e .
