@@ -201,12 +201,12 @@ source dev/bin/activate
 uv pip install -e .
 uv pip install -U "qwen-vl-utils"   
 ```
-
-<!-- ```bash
+or use this
+ ```bash
 uv venv -p python3.11.5 dev311
 source dev311/bin/activate
 uv pip install -e .
-``` -->
+``` 
 
 
 
